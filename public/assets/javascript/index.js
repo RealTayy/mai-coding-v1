@@ -1,1 +1,3 @@
-console.log('javascript loaded');
+$(() => {
+	console.log('test');
+});

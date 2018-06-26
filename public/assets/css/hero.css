@@ -1,0 +1,13 @@
+.hero {
+  position: relative;  
+  background: blue;
+}
+
+.hero-island {
+  position: relative;
+}
+
+.hero-footer {
+  position: relative;
+  bottom: -5px;
+}
