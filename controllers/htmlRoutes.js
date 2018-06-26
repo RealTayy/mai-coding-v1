@@ -20,7 +20,7 @@ var exphbs = require('express-handlebars');
 |*****************/
 /* SET ROUTES */
 router.get('/', (req, res) => {
-    res.render('./main/index.hbs', { text: 'Hello Tay!' });
+    res.render('./main/index.hbs', { text: 'Hello Tay!' }ls);
 });
 
 /***********|
