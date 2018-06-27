@@ -1,29 +1,28 @@
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  font-size: 1rem;
+.intro {
+	background-color: #333;
+	color: #fff;	
 }
 
-button {
-  padding: .618rem 1rem;
+.intro-about-text {
+	text-align: justify;
 }
 
-.section-gap {
-  width: 100%;
-  height: 2.618rem;
-}
-
-.section-header-text {
-	font-size: 2.618em;	
+.intro-content {
+	max-width: 650px;
 }
 
 /* Small */
 @media only screen and (max-width: 600px) {
-
+	.intro {
+		padding-top: 1.618em;
+	}
 }
 
 /* Medium */
 @media only screen and (min-width: 601px) {
-
+	.intro {
+		padding-top: 2.618em;
+	}
 }
 
 /* Large */
