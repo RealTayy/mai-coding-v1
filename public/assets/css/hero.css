@@ -1,44 +1,62 @@
 .hero {
-  position: relative;  
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   height: 100vh;
   background: blue;
 }
 
-.hero-island {
-  position: relative;
+.nav-gap {
+  width: 100%;
+  height: 64px;
 }
 
-.hero-footer {  
+.hero-island {  
+  position: relative;
+  height: 30%;  
+  display: flex;
+  align-items: flex-end;  
+}
+
+.hero-island > div {
+  position: relative;
+  width: 100%;
+}
+
+.hero-island-header-text {
+  font-size: 4.236em;
+}
+
+.hero-island-subheader-text {
+  font-size: 2.618em;
+}
+
+.hero-footer {
   position: relative;
   align-self: flex-end;
   bottom: -5px;
 }
 
-.hero-footer-image {  
-}
+.hero-footer-image {}
 
-.hero-footer-image > img {
-  
-}
+.hero-footer-image>img {}
 
 /* Small */
-@media only screen and (max-width: 600px) {
 
+@media only screen and (max-width: 600px) {
+  .nav-gap {
+    height: 56px;
+  }
 }
 
 /* Medium */
-@media only screen and (min-width: 601px) {
 
-}
+@media only screen and (min-width: 601px) {}
 
 /* Large */
-@media only screen and (min-width: 993px) {
 
-}
+@media only screen and (min-width: 993px) {}
 
 /* Extra Large */
-@media only screen and (min-width: 1200px) {
 
-}
+@media only screen and (min-width: 1200px) {}

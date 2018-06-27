@@ -1,0 +1,26 @@
+nav {
+	position: absolute;
+	background-color: #222;
+}
+
+.nav-logo {
+	height: 64px;
+	width: 64px;
+}
+
+/* Small */
+@media only screen and (max-width: 600px) {
+	.nav-logo {
+		height: 56px;
+		width: 56px;
+	}
+}
+
+/* Medium */
+@media only screen and (min-width: 601px) {}
+
+/* Large */
+@media only screen and (min-width: 993px) {}
+
+/* Extra Large */
+@media only screen and (min-width: 1200px) {}
