@@ -1,5 +1,8 @@
 .hero {
   position: relative;  
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
   background: blue;
 }
 
@@ -7,9 +10,17 @@
   position: relative;
 }
 
-.hero-footer {
+.hero-footer {  
   position: relative;
+  align-self: flex-end;
   bottom: -5px;
+}
+
+.hero-footer-image {  
+}
+
+.hero-footer-image > img {
+  
 }
 
 /* Small */
