@@ -1,36 +1,37 @@
 .intro {
-	background-color: #333;
-	color: #fff;	
+  background-color: #222;
+  color: #fff;
 }
 
 .intro-about-text {
 	text-align: justify;
+	font-size: 1.2rem;
 }
 
 .intro-content {
-	max-width: 650px;
+  max-width: 650px;
 }
 
 /* Small */
+
 @media only screen and (max-width: 600px) {
-	.intro {
-		padding-top: 1.618em;
-	}
+  .intro {
+    padding-top: 1.618em;
+  }
 }
 
 /* Medium */
+
 @media only screen and (min-width: 601px) {
-	.intro {
-		padding-top: 2.618em;
-	}
+  .intro {
+    padding-top: 2.618em;
+  }
 }
 
 /* Large */
-@media only screen and (min-width: 993px) {
 
-}
+@media only screen and (min-width: 993px) {}
 
 /* Extra Large */
-@media only screen and (min-width: 1200px) {
 
-}
+@media only screen and (min-width: 1200px) {}
