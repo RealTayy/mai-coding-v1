@@ -13,12 +13,13 @@
 
 .hero-island {  
   position: relative;
-  height: 30%;  
+  /* top: 30%;   */
   display: flex;
-  align-items: flex-end;  
+  align-items: flex-end;    
 }
 
 .hero-island > div {
+  z-index: 1;
   position: relative;
   width: 100%;
 }
@@ -28,35 +29,51 @@
 }
 
 .hero-island-subheader-text {
-  font-size: 2.618em;
+  font-size: 2.618em; 
 }
 
 .hero-footer {
   position: relative;
   align-self: flex-end;
-  bottom: -5px;
+  /* bottom: -5px; */
 }
 
-.hero-footer-image {}
+.hero-footer-image {
+  z-index: -1;
+}
 
-.hero-footer-image>img {}
+.hero-footer-image>img {
+  z-index: -1;
+}
 
 /* Small */
-
 @media only screen and (max-width: 600px) {
   .nav-gap {
     height: 56px;
   }
+
+  .hero-island-header-text {
+    font-size: 2.618rem;
+  }
+  
+  .hero-island-subheader-text {
+    font-size: 1.618rem; 
+  }
 }
 
 /* Medium */
-
-@media only screen and (min-width: 601px) {}
+@media only screen and (min-width: 601px) {
+  .hero-island-header-text {
+    font-size: 4.236rem;
+  }
+  
+  .hero-island-subheader-text {
+    font-size: 2.618rem; 
+  }
+}
 
 /* Large */
-
 @media only screen and (min-width: 993px) {}
 
 /* Extra Large */
-
 @media only screen and (min-width: 1200px) {}
