@@ -1,9 +1,11 @@
 .hero {
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
+  display: flex;  
   height: 100vh;
   background: blue;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
 }
 
 .nav-gap {
@@ -13,15 +15,12 @@
 
 .hero-island {  
   position: relative;
-  /* top: 30%;   */
-  display: flex;
-  align-items: flex-end;    
+  width: 100%;    
 }
 
 .hero-island > div {
-  z-index: 1;
   position: relative;
-  width: 100%;
+  z-index: 1;  
 }
 
 .hero-island-header-text {
@@ -34,16 +33,16 @@
 
 .hero-footer {
   position: relative;
-  align-self: flex-end;
-  /* bottom: -5px; */
+  bottom: -5px;
+  width: 100%;  
 }
 
 .hero-footer-image {
-  z-index: -1;
+  max-width: 600px;
+  margin: 0 auto; 
 }
 
-.hero-footer-image>img {
-  z-index: -1;
+.hero-footer-image>img {     
 }
 
 /* Small */
