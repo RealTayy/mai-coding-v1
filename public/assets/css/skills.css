@@ -13,8 +13,7 @@
   box-shadow: 0 5px 5px -1px #ddd;
 }
 
-.skills-cards {
-  display: flex;
+.skills-cards {  
   margin: 0;
   font-size: 1.2rem;
 }
@@ -70,7 +69,11 @@
 
 /* Large */
 
-@media only screen and (min-width: 993px) {}
+@media only screen and (min-width: 993px) {
+  .skills-cards {
+    display: flex;
+  }
+}
 
 /* Extra Large */
 
