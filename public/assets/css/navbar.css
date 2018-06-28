@@ -33,6 +33,21 @@ nav {
     height: 56px;
     width: 56px;
   }
+
+  .nav-logo-text {
+    display: none;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  .nav-logo .nav-logo-img {
+    height: 56px;
+    width: 56px;
+  }
+
+  .nav-logo-text {
+    display: none;
+  }
 }
 
 /* Medium */
