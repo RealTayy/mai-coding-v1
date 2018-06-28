@@ -8,37 +8,45 @@
   position: relative;
   top: -4.236rem;
   background-color: #fff;
-	border: 1px solid #ddd;
+  border: 1px solid #ddd;
   border-radius: .618rem;
   box-shadow: 0 5px 5px -1px #ddd;
-
 }
 
 .skills-cards {
   margin: 0;
+  font-size: 1.2rem;
 }
 
-.skills-card-image {
-	padding-top: 1.618rem;
+.skills-card-icon {
+  color: #7454df;
+}
+
+.row .skills-card-col {
+  padding: 3.618rem .75rem 0 .75rem;
 }
 
 .skills-card-header {
-  margin: 1rem 0;
+  margin: 2.618rem 0 1rem 0;
+}
+
+.skills-card-body {
+  margin-bottom: 2.618rem;
 }
 
 .skills-card-header-text {
-	font-size: 1.942rem;
-	font-weight: bold;
+  font-size: 1.942rem;
+  font-weight: bold;
 }
 
-.skills-card-tools-header-text {
-	font-size: 1.618rem;
-	margin: 1rem 0;
+.skills-card-list {
+  margin-bottom: 2.618rem;
 }
 
-.skills-card-body-text,
-.skills-card-tolls-item {
-  font-size: 1.2rem;
+.skills-card-list-header-text {
+  color: #7454df;
+  font-weight: bold;
+  margin: .618rem 0;
 }
 
 /* Small */
@@ -56,7 +64,7 @@
   .mid-card {
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
-	}
+  }
 }
 
 /* Large */
