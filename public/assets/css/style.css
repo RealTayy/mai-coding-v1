@@ -11,17 +11,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 button {
+  cursor: pointer;
   padding: .618rem 1rem;
 }
 
 .section-gap {
   width: 100%;
-  height: 2.618rem;
+  height: 3.618rem;
 }
 
 .section-header-text {
   font-weight: bold;
 	font-size: 2.618rem;	
+}
+
+.section-subheader-text {
+  font-size: 1.2rem;
 }
 
 /* Small */
@@ -51,15 +56,15 @@ button {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #fff; 
+  background: #222; 
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #555; 
+  background: #bbb; 
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #333; 
+  background: #999; 
 }

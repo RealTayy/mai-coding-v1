@@ -1,1 +1,27 @@
-{{title}}
+<div class="color-{{color}}">
+	<div class="project-container container direction-{{direction}}">
+		<div class="project-content valign row">
+			<div class="project-image center-align col m12 l7">
+				<img class="responsive-img" src={{media}}/>
+			</div>
+			<div class="project-body col m12 l5">
+				<div class="project-title">{{title}}</div>
+				<div class="project-subtitle">{{subtitle}}</div>
+				<div class="project-text-title">How it works</div>
+				<div class="project-text">{{text}}</div>
+			</div>
+		</div>
+		<div class="project-technologies center-align">
+			{{#each technologies}}
+			<img class="technology-img" src={{this}}/> {{/each}}
+		</div>
+		<div class="project-links center-align">
+			<a href={{livelink}} target="_blank">
+				<button> Launch app site</button>
+			</a>
+			<a href={{github}} target="_blank">
+				<button> View on Github</button>
+			</a>
+		</div>
+	</div>
+</div>

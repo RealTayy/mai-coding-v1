@@ -18,7 +18,6 @@ var exphbs = require('express-handlebars');
 /*****************|
 |* SET UP ROUTER *| 
 |*****************/
-console.log(__dirname);
 /* SET ROUTES */
 router.get('/', (req, res) => {
     const projects = require('../data/projects.js');
