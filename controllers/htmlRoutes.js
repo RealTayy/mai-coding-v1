@@ -18,9 +18,11 @@ var exphbs = require('express-handlebars');
 /*****************|
 |* SET UP ROUTER *| 
 |*****************/
+console.log(__dirname);
 /* SET ROUTES */
 router.get('/', (req, res) => {
-    res.render('./main/index.hbs', { text: 'Hello Tay!' });
+    const projects = require('../data/projects.js');
+    res.render('./main/index.hbs', { projects: projects });
 });
 
 /***********|
