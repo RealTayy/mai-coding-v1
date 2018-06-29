@@ -1,3 +1,4 @@
+/* #7454df */
 html {
   color: #333;
   font-size: 1rem;
@@ -8,11 +9,6 @@ html {
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-size: 1rem;
-}
-
-button {
-  cursor: pointer;
-  padding: .618rem 1rem;
 }
 
 .section-gap {

@@ -22,6 +22,10 @@
   text-align: center;
 }
 
+.project-image > img {
+  border-radius: .618rem;
+}
+
 .project-content {
   padding-top: 1.618rem;
 }
@@ -51,7 +55,7 @@
 }
 
 .project-link {
-	margin: .618rem 0;
+	margin: .618rem .309rem;
 }
 
 .technology-img {
@@ -97,6 +101,10 @@
   .project-body {
     text-align: left;
   }
+  .technology-img {
+		margin: .618rem;
+		height: 50px;
+	}
 }
 
 /* Extra Large */

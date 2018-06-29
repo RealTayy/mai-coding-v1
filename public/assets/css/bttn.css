@@ -1,0 +1,45 @@
+.bttn {
+cursor: pointer;
+padding: .5em .9em;
+background-color:white;
+border-radius: 3px;
+letter-spacing: .4px;
+color: #333;
+font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+font-size: 1rem;
+user-select: none;
+font-weight: 400;
+border: none;
+}
+
+.bttn:hover {
+background-color:white;
+}
+
+.bttn:active {
+background-color:white;
+}
+
+.bttn:focus {
+background-color:white;
+}
+
+.bpurple {
+background-color:#514294;
+color: #fff;
+}
+
+.bpurple:hover {
+background-color:#6d57d1;
+
+}
+
+.bpurple:active {
+background-color:#514294;
+
+}
+
+.bpurple:focus {
+background-color:#514294;
+
+}
