@@ -3,6 +3,10 @@
   line-height: 1.25rem;
 }
 
+.projects-subheader-text > a {
+  cursor: pointer;
+}
+
 .project-body {
   text-align: center;
 }
