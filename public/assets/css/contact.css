@@ -20,16 +20,27 @@
   margin: 1rem 0;
 }
 
+.contact-button > button {
+  white-space: nowrap;
+}
+
+.invisible-expand {
+  background-color: #444;
+  position: absolute;
+  z-index: 1;
+  border-radius: 1000rem;  
+}
+
 .contact-modal {
   position: fixed;
   height: 100vh;
   width: 100vw;
-  z-index: 1;
+  z-index: 2;
   left: 0;
   top: 0;
-  color: #fff;
-  display: flex;
+  color: #fff;  
   display: none;
+  opacity: 0;
 }
 
 .contact-modal>.container {
@@ -38,8 +49,9 @@
 }
 
 .contact-model-header {
-  font-size: 2.618rem;
-  line-height: 2.618rem;
+  margin-top: 1rem;
+  font-size: 1.618rem;
+  line-height: 1.618rem;
 }
 
 input,
@@ -54,8 +66,8 @@ textarea {
 .contact-model-close {
 	cursor: pointer;
   position: absolute;
-  top: 2.618rem;
-  right: 2.618rem;
+  top: 1rem;
+  right: 0;
   user-select: none;
   -moz-user-select: none;
   -khtml-user-select: none;
@@ -79,6 +91,15 @@ textarea {
   }
   .contact-text {
     margin: 0;
+  }
+  .contact-model-header {
+    margin-top: 1rem;
+    font-size: 2.618rem;
+    line-height: 2.618rem;
+  }
+  .contact-model-close {
+    top: 1.618rem;
+    right: 0;
   }
 }
 
