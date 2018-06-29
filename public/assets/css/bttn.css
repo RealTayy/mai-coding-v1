@@ -1,45 +1,69 @@
 .bttn {
-cursor: pointer;
-padding: .5em .9em;
-background-color:white;
-border-radius: 3px;
-letter-spacing: .4px;
-color: #333;
-font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-font-size: 1rem;
-user-select: none;
-font-weight: 400;
-border: none;
+  cursor: pointer;
+  padding: .5em .9em;
+  background-color: #fff;
+  border-radius: 3px;
+  letter-spacing: .4px;
+  color: #333;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  user-select: none;
+  font-weight: 400;
+	border: none;
+	-o-transition:.2s;
+  -ms-transition:.2s;
+  -moz-transition:.2s;
+  -webkit-transition:.2s;  
+  transition:.2s;		
+}
+
+.bttn-big {
+	font-size: 1.3rem;
+	padding: .5em .9em;
 }
 
 .bttn:hover {
-background-color:white;
+  background-color: #ddd;
 }
 
 .bttn:active {
-background-color:white;
+  background-color: #fff;
 }
 
 .bttn:focus {
-background-color:white;
+  background-color: #fff;
 }
 
 .bpurple {
-background-color:#514294;
-color: #fff;
+  background-color: #7454DF;
+  color: #fff;
 }
 
 .bpurple:hover {
-background-color:#6d57d1;
-
+  background-color: #5C539F;
 }
 
 .bpurple:active {
-background-color:#514294;
-
+  background-color: #7454DF;
 }
 
 .bpurple:focus {
-background-color:#514294;
+  background-color: #7454DF;
+}
 
+.bblack {
+  background-color: #444;
+  color: #fff;
+}
+
+.bblack:hover {
+  background-color: #333;
+}
+
+.bblack:active {
+  background-color: #444;
+}
+
+.bblack:focus {
+  background-color: #444;
 }

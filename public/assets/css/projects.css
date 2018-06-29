@@ -3,21 +3,6 @@
   line-height: 1.25rem;
 }
 
-.color-white {
-  background-color: #fff;
-  color: #333;
-}
-
-.color-black {
-  background-color: #444;
-  color: #fff;
-}
-
-.color-grey {
-  background-color: #ddd;
-  color: #333;
-}
-
 .project-body {
   text-align: center;
 }
@@ -40,7 +25,7 @@
 .project-title {
   font-size: 1.618rem;
 	font-weight: bold;
-	color: #7454df;
+	color: #7454DF;
 	margin-bottom: .618rem;
 }
 

@@ -1,0 +1,95 @@
+.contact-content {
+  position: relative;
+  top: -4.236rem
+}
+
+.contact-card {
+  border: none;
+  box-shadow: 0 5px 5px -1px #444;
+  padding: 1.618rem
+}
+
+.contact-header {
+  font-size: 1.618rem;
+  font-weight: bold;
+  line-height: 1.618rem
+}
+
+.contact-text {
+  margin: 1rem 0;
+}
+
+.contact-modal {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  color: #fff;
+  display: flex;
+  display: none;
+}
+
+.contact-modal>.container {
+  position: relative;
+  max-width: 900px;
+}
+
+.contact-model-header {
+  font-size: 2.618rem;
+  line-height: 2.618rem;
+}
+
+input,
+textarea {
+  color: #fff;
+}
+
+.input-field label {
+  color: #fff;
+}
+
+.contact-model-close {
+	cursor: pointer;
+  position: absolute;
+  top: 2.618rem;
+  right: 2.618rem;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+	-o-user-select: none;
+	font-size:2rem;
+	line-height: 2rem;
+}
+
+/* Small */
+
+@media only screen and (max-width: 600px) {}
+
+/* Medium */
+
+@media only screen and (min-width: 601px) {
+  .contact-header {
+    font-size: 2.618rem;
+    font-weight: bold;
+    line-height: 2.618rem
+  }
+  .contact-text {
+    margin: 0;
+  }
+}
+
+/* Large */
+
+@media only screen and (min-width: 993px) {
+  .valign {
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* Extra Large */
+
+@media only screen and (min-width: 1200px) {}

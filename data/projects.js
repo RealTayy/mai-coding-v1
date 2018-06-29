@@ -25,11 +25,11 @@ const projects = [
 		technologies: [node, react, materialize, mongodb, mongoose, heroku],
 	},
 	{
-		direction: 'right',
+		direction: 'right', 
 		color: 'grey',
 		title: 'Pho Now | CMS',
 		subtitle: 'A trendy restaurant website on the customer face side with a back-end administrative side that acts as a Content Management System for the restaurant owner.',
-		text: 'Pho Now uses Bootstrap4, HandleBars, and jQuery to deliver information to visitors. The site\'s pulls dynamic data from a MySQL DB using Sequelize as an ORM. Using the CMS\'s UI the owner can make live changes to the customer facing front-end. A Node.js server is hosted on Heroku along with a JawsDB.',
+		text: 'Pho Now uses Bootstrap4, HandleBars, and jQuery to deliver information to visitors. The site pulls dynamic data from a MySQL DB using Sequelize as an ORM. Using the CMS\'s UI the owner can make live changes to the customer facing front-end. A Node.js server is hosted on Heroku along with a JawsDB.',
 		media: 'http://via.placeholder.com/600x400',
 		github: 'https://github.com/thaiscmky/phonow',		
 		applink: 'https://phosho-phonow-production.herokuapp.com/admin',
