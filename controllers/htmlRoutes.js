@@ -21,7 +21,8 @@ var exphbs = require('express-handlebars');
 /* SET ROUTES */
 router.get('/', (req, res) => {
     const projects = require('../data/projects.js');
-    res.render('./main/index.hbs', { projects: projects });
+	const intro = require('../data/intro.js');
+    res.render('./main/index.hbs', { projects: projects, intro: intro });
 });
 
 /***********|

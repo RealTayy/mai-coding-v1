@@ -19,9 +19,9 @@ $(() => {
 		scrollTo('.contact', true);
 	});
 
-	// Modal openanimation
+	// Modal open animation
 	let modalAnimated = false;
-	let initContactBtnWidth = $('.contact-button > button').outerWidth();	
+	let initContactBtnWidth = $('.contact-button > button').outerWidth();
 	$('.contact-button > button').on('click', function () {
 		$('.contact-modal').finish();
 		$('.invisible-expand').finish();
@@ -39,6 +39,13 @@ $(() => {
 				'font-size': '0px',
 				'border-radius': '2rem',
 			}, 1000, 'easeOutElastic', () => {
+				$.scrollLock(false);
+				let position = $('.contact-button > button').offset();
+				$('.invisible-expand').css({
+					'top': position.top + ($('.contact-button > button').outerHeight() / 2),
+					'left': position.left + ($('.contact-button > button').outerWidth() / 2)
+					})
+					$.scrollLock(true);
 				// Expands button and shows modal
 				let viewHeight = $(window).height() * 2;
 				let viewWidth = $(window).width() * 2;
@@ -57,13 +64,13 @@ $(() => {
 			})
 		}
 	});
-	
+
 	// Modal Close animation
 	$('.contact-model-close').on('click', function () {
+		$.scrollLock(false);
 		$('.contact-modal').finish();
 		$('.invisible-expand').finish();
-		$('.contact-button > button').finish();
-		$.scrollLock(false);
+		$('.contact-button > button').finish();				
 		// Fades modal out
 		$('.contact-modal').animate({
 			opacity: '0'
@@ -94,4 +101,3 @@ $(() => {
 
 
 });
-
