@@ -1,5 +1,13 @@
 $(() => {
 	console.log('Page JS loaded');
+	// Create expander for modal
+	let position = $('.contact-button > button').offset()
+	$('<div class="invisible-expand">')
+		.css({
+			'left': position.left + ($('.contact-button > button').outerWidth() / 2),
+			'top': position.top + $('.contact-button > button').outerHeight() / 2
+		})
+		.appendTo(document.body);
 
 	// Scroll from hero to intro
 	$('.hero-island-button > button').on('click', () => {
@@ -12,19 +20,15 @@ $(() => {
 	});
 
 	let modalAnimated = false;
+	let initContactBtnWidth = $('.contact-button > button').outerWidth();
 	// Modal animation
 	$('.contact-button > button').on('click', function () {
+		$('.contact-modal').finish();
+		$('.invisible-expand').finish();
+		$('.contact-button > button').finish();
 		if (modalAnimated === false) {
 			// Set to true to precent mutliple animations
 			modalAnimated = true;
-			// Create expander
-			let position = $(this).offset()
-			$('<div class="invisible-expand">')
-				.css({
-					'left': position.left + ($(this).outerWidth() / 2),
-					'top': position.top + $(this).outerHeight() / 2
-				})
-				.appendTo(document.body);
 			// Locks scrolling
 			$.scrollLock(true);
 			// Animates button
@@ -55,12 +59,33 @@ $(() => {
 	});
 
 	$('.contact-model-close').on('click', function () {
-		console.log('sup');
+		$('.contact-modal').finish();
+		$('.invisible-expand').finish();
+		$('.contact-button > button').finish();
+		$.scrollLock(false);
+		// Fades modal out
+		$('.contact-modal').animate({
+			opacity: '0'
+		}, 500, 'easeOutCirc', () => { $('.contact-modal').css({ display: 'none' }) })
+		$('.invisible-expand').animate({
+			height: '0',
+			width: '0',
+			top: `+=${$('.invisible-expand').outerHeight() / 2}`,
+			left: `+=${$('.invisible-expand').outerWidth() / 2}`,
+			'background-color': '#444'
+		}, 500, 'easeOutCirc', () => {
+			$('.contact-button > button').animate({
+				'width': initContactBtnWidth,
+				'color': '#ffffff',
+				'font-size': '1.3rem',
+				'border-radius': '.309rem'
+			}, 1000, 'easeOutQuint', () => { modalAnimated = false });
+		})
 	})
 
 	// Smooth Scroll function
 	const scrollTo = (selector, offset) => {
-		let newPos = (offset) ? $(selector).offset().top - ($(window).height() / 2.6) : $(selector).offset().top;		
+		let newPos = (offset) ? $(selector).offset().top - ($(window).height() / 2.6) : $(selector).offset().top;
 		$('html, body').animate({
 			scrollTop: newPos
 		}, 1000, 'easeOutCubic');
