@@ -1,0 +1,54 @@
+.footer {
+  padding-bottom: 2.618rem;
+}
+
+.footer>div {
+  margin-bottom: 2.618rem
+}
+
+.footer-logo-text {
+  font-weight: bold;
+}
+
+.footer-quote {
+  font-weight: bold;
+  font-size: 1.618rem;
+}
+
+.footer-links {
+	display: flex;
+	justify-content: center;
+}
+
+.footer-links > .footer-link {
+	margin: 0 .618rem;
+}
+
+.footer-link-icon {
+	color: #fff;
+	-o-transition:.2s;
+  -ms-transition:.2s;
+  -moz-transition:.2s;
+  -webkit-transition:.2s;  
+  transition:.2s;		
+}
+
+.footer-link-icon:hover {
+	color: #bbb;	
+}
+
+/* Small */
+
+@media only screen and (max-width: 600px) {}
+
+/* Medium */
+
+@media only screen and (min-width: 601px) {}
+
+/* Large */
+
+@media only screen and (min-width: 993px) {}
+
+/* Extra Large */
+
+@media only screen and (min-width: 1200px) {}

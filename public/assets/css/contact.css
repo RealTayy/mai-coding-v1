@@ -1,18 +1,19 @@
 .contact-content {
   position: relative;
-  top: -4.236rem
+  top: -4.236rem;
 }
 
 .contact-card {
   border: none;
   box-shadow: 0 5px 5px -1px #444;
-  padding: 1.618rem
+  padding: 1.618rem;
+  margin: 0;
 }
 
 .contact-header {
   font-size: 1.618rem;
   font-weight: bold;
-  line-height: 1.618rem
+  line-height: 1.618rem;
 }
 
 .contact-text {
