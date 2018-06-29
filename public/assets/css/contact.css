@@ -89,9 +89,6 @@ textarea {
     font-weight: bold;
     line-height: 2.618rem
   }
-  .contact-text {
-    margin: 0;
-  }
   .contact-model-header {
     margin-top: 1rem;
     font-size: 2.618rem;
@@ -106,6 +103,9 @@ textarea {
 /* Large */
 
 @media only screen and (min-width: 993px) {
+  .contact-text {
+    margin: 0;
+  }
   .valign {
     display: flex;
     align-items: center;

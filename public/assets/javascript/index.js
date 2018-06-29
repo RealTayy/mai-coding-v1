@@ -19,9 +19,9 @@ $(() => {
 		scrollTo('.contact', true);
 	});
 
+	// Modal openanimation
 	let modalAnimated = false;
-	let initContactBtnWidth = $('.contact-button > button').outerWidth();
-	// Modal animation
+	let initContactBtnWidth = $('.contact-button > button').outerWidth();	
 	$('.contact-button > button').on('click', function () {
 		$('.contact-modal').finish();
 		$('.invisible-expand').finish();
@@ -57,7 +57,8 @@ $(() => {
 			})
 		}
 	});
-
+	
+	// Modal Close animation
 	$('.contact-model-close').on('click', function () {
 		$('.contact-modal').finish();
 		$('.invisible-expand').finish();
