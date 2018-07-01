@@ -6,31 +6,35 @@
 		<div>
 			<div class="row center-align">
 				<img class="my-logo" src="./assets/images/whitelogo.png" alt="mini-logo" />
+				<div class="footer-logo-text">
+					<i class="fas fa-envelope-square fa-1x"></i> themai@maicoding.me</div>
 				<div class="contact-model-header"> Looks like your interested in getting to know me a little better?</div>
 				<div class="contact-model-subheader"> I can't wait to hear from you. Give me a bit of info and I'll get in touch.</div>
 			</div>
 			<div class="row">
-				<form class="col s12">
+				<form id="contact-form" class="col s12">
 					<div class="input-field col s12">
 						<i class="material-icons prefix">face</i>
-						<input id="name" type="text" class="validate">
-						<label for="name">Name</label>
+						<input id="name" type="text" class="validate disabled">
+						<label for="name">Name*</span>
+						</label>
 						<span class="helper-text" data-error="That doesn't look like a name to me" data-success="Nice to meet you!"></span>
 					</div>
 					<div class="input-field col s12">
 						<i class="material-icons prefix">email</i>
 						<input id="email" type="email" class="validate">
-						<label for="email">Email</label>
+						<label for="email">Email*</label>
 						<span class="helper-text" data-error="I need a valid email to get back to you" data-success="We'll get in touch soon!"></span>
 					</div>
 					<div class="input-field col s12">
 						<i class="material-icons prefix">mode_edit</i>
 						<textarea id="message" class="materialize-textarea validate"></textarea>
-						<label for="message">Your Message</label>
+						<label for="message">Message*</label>
 						<span class="helper-text" data-error="This message looks funky" data-success="Message looks good to go!"></span>
 					</div>
 					<div class="contact-model-form-button center-align">
-						<button id="contact-model-form-submit" type="submit" class="bttn"> Send Message</button>
+						<button id="contact-model-form-submit" type="submit" class="bttn">Send Message</button>
+						<div class="validation-text">&nbsp</div>
 					</div>
 				</form>
 			</div>

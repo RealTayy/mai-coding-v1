@@ -47,6 +47,7 @@ const cssDir = path.join(__dirname, 'public', 'assets', 'css');
 //         prefix: '/assets/css'
 //     })
 // );
+
 app.use(    
     sassMiddleware({
         src: __dirname + '/sass',
@@ -102,9 +103,11 @@ const controllersDir = path.join(__dirname, 'controllers');
 
 /* SET UP ROUTES */
 const routerHtml = require(path.join(controllersDir, 'htmlRoutes.js'));
+const routerApi = require(path.join(controllersDir, 'apiRoutes.js'));
 
 /* USE ROUTES */
 app.use('/', routerHtml);
+app.use('/api', routerApi);
 
 /*********************************|
 |* LISTEN FOR CONNECTION ON PORT *| 
