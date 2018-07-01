@@ -9,17 +9,16 @@
   font-size: 1rem;
   user-select: none;
   font-weight: 400;
-	border: none;
-	-o-transition:.2s;
-  -ms-transition:.2s;
-  -moz-transition:.2s;
-  -webkit-transition:.2s;  
-  transition:.2s;		
+  border: none;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;  
 }
 
 .bttn-big {
-	font-size: 1.3rem;
-	padding: .5em .9em;
+  font-size: 1.3rem;
+  padding: .5em .9em;
 }
 
 .bttn:hover {
@@ -32,6 +31,12 @@
 
 .bttn:focus {
   background-color: #fff;
+}
+
+.bttn.disabled {
+  pointer-events: none;
+  cursor: default;
+  color: #9f9f9f !important;
 }
 
 .bpurple {
