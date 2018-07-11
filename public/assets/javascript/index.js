@@ -12,7 +12,7 @@ $(() => {
 		.appendTo(document.body);
 
 	// Scroll from hero to intro
-	$('.hero-island-button > button').on('click', () => {
+	$('.hero-island-button > a').on('click', () => {
 		scrollTo('.intro');
 	});
 
