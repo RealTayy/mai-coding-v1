@@ -11,6 +11,7 @@ const sequelize = './assets/images/techlogos/sequelize.png';
 const knockout = './assets/images/techlogos/knockout.png';
 const bootstrap = './assets/images/techlogos/bootstrap.png';
 const handlebars = './assets/images/techlogos/handlebars.png';
+const reactmaterialize = './assets/images/techlogos/reactmaterialize.png';
 const projects = [
 	// directions: left, right
 	// colors: white, grey, black, blackest, purple
@@ -24,7 +25,7 @@ const projects = [
 		media: './assets/images/projects/memberDat.png',
 		github: 'https://github.com/RealTayy/member-dat',
 		applink: 'https://tm-memberdat.herokuapp.com/',
-		technologies: [node, react, materialize, mongodb, mongoose, heroku],
+		technologies: [node, react, materialize, mongodb, mongoose, heroku, reactmaterialize],
 	},
 	{
 		direction: 'right',
