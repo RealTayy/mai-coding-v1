@@ -48,7 +48,7 @@ const projects = [
 		media: './assets/images/projects/letseat.png',
 		github: 'https://github.com/RealTayy/lets-eat',
 		applink: 'https://thaiscmky.github.io/letseat/',
-		technologies: [node, bootstrap, knockout, jquery, firebase, heroku],
+		technologies: [node, bootstrap, knockout, jquery, firebase],
 	},
 ]
 
