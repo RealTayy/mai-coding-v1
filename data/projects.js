@@ -21,7 +21,7 @@ const projects = [
 		title: 'MemberDat',
 		subtitle: 'MemberDat is accounting/membership management software that helps users manage their members and finances. It keeps track of subscriptions/payments while provding other administrative functions.',
 		text: 'MemberDat uses React and Materialize to deliver a slick UI that feels smooth with every click. It pulls in data from a MongoDB using Mongoose as an ORM. It\s launched on a Node.js Express server that is hosted on Heroku.',
-		media: 'http://via.placeholder.com/600x400',
+		media: './assets/images/projects/memberDat.png',
 		github: 'https://github.com/RealTayy/member-dat',
 		applink: 'https://tm-memberdat.herokuapp.com/',
 		technologies: [node, react, materialize, mongodb, mongoose, heroku],
