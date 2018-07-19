@@ -25,7 +25,7 @@ const projects = [
 		media: './assets/images/projects/memberDat.png',
 		github: 'https://github.com/RealTayy/member-dat',
 		applink: 'https://tm-memberdat.herokuapp.com/',
-		technologies: [node, react, materialize, mongodb, mongoose, heroku, reactmaterialize],
+		technologies: [node, react, materialize, reactmaterialize, mongodb, mongoose, heroku,],
 	},
 	{
 		direction: 'right',
