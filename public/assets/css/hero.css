@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  display: flex;  
+  display: flex;
   height: 100vh;
   background: #fff;
   flex-direction: column;
@@ -9,18 +9,18 @@
 }
 
 .nav-gap {
-  width: 100%;  
+  width: 100%;
 }
 
-.hero-island {  
+.hero-island {
   position: relative;
   top: 1.618rem;
-  width: 100%;    
+  width: 100%;
 }
 
-.hero-island > div {
+.hero-island>div {
   position: relative;
-  z-index: 1;  
+  z-index: 1;
 }
 
 .hero-island-header-text {
@@ -28,82 +28,85 @@
 }
 
 .hero-island-subheader-text {
-  font-size: 1.25rem; 
+  font-size: 1.25rem;
 }
 
 .hero-island-button {
   padding-top: 3rem
 }
 
+.hero-island-button>a {
+  background: #333;
+  color: #fff;
+}
+
 .hero-footer {
   position: relative;
   bottom: -2.618rem;
-  width: 100%;  
+  width: 100%;
 }
 
 .hero-footer-image {
-  max-width: 650px;  
-  margin: 0 auto; 
+  max-width: 650px;
+  margin: 0 auto;
 }
 
 .hero-img {
-  max-width: 100%;  
+  max-width: 100%;
   height: auto;
 }
 
-
 /* Small */
+
 @media only screen and (max-width: 600px) {
   .nav-gap {
     height: calc(1rem + 64px);
   }
-
   .hero-footer {
-    bottom: -1.618rem;    
+    bottom: -1.618rem;
   }
 }
 
 /* Medium */
+
 @media only screen and (min-width: 601px) and (min-height: 600px) {
   .nav-gap {
     height: calc(1rem + 64px);
   }
-
   .hero-island-header-text {
     font-size: 3.236rem;
   }
-  
   .hero-island-subheader-text {
-    font-size: 2rem; 
+    font-size: 2rem;
   }
-
   .hero-footer {
-    bottom: -2.618rem;    
+    bottom: -2.618rem;
   }
   .hero-footer-image {
-    max-width: 700px;  
-    margin: 0 auto; 
+    max-width: 700px;
+    margin: 0 auto;
   }
 }
 
 /* Large */
+
 @media only screen and (min-width: 993px) and (min-height: 740px) {
   .hero-island-header-text {
     font-size: 4.236rem;
   }
-  
   .hero-island-subheader-text {
-    font-size: 2.618rem; 
+    font-size: 2.618rem;
   }
   .hero-footer-image {
-    max-width: 900px;  
-    margin: 0 auto; 
+    max-width: 900px;
+    margin: 0 auto;
   }
 }
 
 /* Extra Large */
+
 @media only screen and (min-width: 1200px) and (min-height:825px) {
   .hero-footer-image {
-    max-width: 1000px;      
+    max-width: 1000px;
   }
 }
