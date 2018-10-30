@@ -3,7 +3,7 @@
   line-height: 1.25rem;
 }
 
-.projects-subheader-text > a {
+.projects-subheader-text>a {
   cursor: pointer;
 }
 
@@ -11,15 +11,15 @@
   text-align: center;
 }
 
-.project-image > img {
+.project-image>img {
   border-radius: .618rem;
 }
 
-.project-content {
+.project-apps {
   padding-top: 1.618rem;
 }
 
-.project-content,
+.project-apps,
 .project-technologies,
 .project-links {
   margin: 0;
@@ -28,72 +28,94 @@
 
 .project-title {
   font-size: 1.618rem;
-	font-weight: bold;
-	color: #7454DF;
-	margin-bottom: .618rem;
+  font-weight: bold;
+  color: #7454DF;
+  margin-bottom: .618rem;
 }
 
 .project-subtitle {
-	margin-bottom: .618rem;
+  margin-bottom: .618rem;
 }
 
 .project-text-title {
   font-size: 1.2rem;
-	font-weight: bold;
-	margin-bottom: .618rem;
+  font-weight: bold;
+  margin-bottom: .618rem;
 }
 
 .project-link {
-	margin: .618rem .309rem;
+  margin: .618rem .309rem;
 }
 
 .technology-img {
-	margin: .309rem;
-	height: 30px;
+  margin: .309rem;
+  height: 30px;
+}
+
+.websites {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.websites .website {
+  padding: .5rem;
+  margin-left: 0 !important;
+  overflow: hidden;
+}
+
+.website .website-card {
+  border-radius: .618rem;
+  overflow: hidden;
+}
+
+.website .website-bg {
+  display: block;
+  width: 100%;
 }
 
 /* Small */
 
 @media only screen and (max-width: 600px) {
-	.project-title {
-		margin-top: .618rem;
-	}
+  .project-title {
+    margin-top: .618rem;
+  }
 }
 
 /* Medium */
 
 @media only screen and (min-width: 601px) {
-	.project-title {
-		margin-top: .618rem;
-	}
-	.technology-img {
-		margin: .618rem;
-		height: 40px;
-	}
+  .project-title {
+    margin-top: .618rem;
+  }
+  .technology-img {
+    margin: .618rem;
+    height: 40px;
+  }
 }
 
 /* Large */
 
 @media only screen and (min-width: 993px) {
-  .direction-right>.project-content>.project-image {
+  .direction-right>.project-apps>.project-image {
     position: relative;
     left: 41.6666666667%;
   }
-  .direction-right>.project-content>.project-body {
+  .direction-right>.project-apps>.project-body {
     position: relative;
     right: 58.3333333333%;
   }
   .valign {
     display: flex;
     align-items: center;
-	}
+  }
   .project-body {
     text-align: left;
   }
   .technology-img {
-		margin: .618rem;
-		height: 50px;
-	}
+    margin: .618rem;
+    height: 50px;
+  }
 }
 
 /* Extra Large */
