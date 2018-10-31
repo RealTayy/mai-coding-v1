@@ -10,33 +10,8 @@
 		</p>
 	</div>
 	<div class="projects-websites container">
-		<div class="section-gap"></div>
 		<div class="websites row">
-			<div class="website col s12 m6 l4">
-				<figure class="website-card">
-					<img class="website-bg" src="http://via.placeholder.com/960x640" alt="website">
-				</figure>
-			</div>
-			<div class="website col s12 m6 l4">
-				<figure class="website-card">
-					<img class="website-bg" src="http://via.placeholder.com/960x640" alt="websitename">
-				</figure>
-			</div>
-			<div class="website col s12 m6 l4">
-				<figure class="website-card">
-					<img class="website-bg" src="http://via.placeholder.com/960x640" alt="websitename">
-				</figure>
-			</div>
-			<div class="website col s12 m6 l4">
-				<figure class="website-card">
-					<img class="website-bg" src="http://via.placeholder.com/960x640" alt="websitename">
-				</figure>
-			</div>
-			<div class="website col s12 m6 l4">
-				<figure class="website-card">
-					<img class="website-bg" src="http://via.placeholder.com/960x640" alt="website">
-				</figure>
-			</div>
+			{{#each websites}} {{> projects/_website}} {{/each}}
 		</div>
 	</div>
 	<div class="section-gap"></div>

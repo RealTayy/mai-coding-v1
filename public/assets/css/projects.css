@@ -56,6 +56,7 @@
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
 }
 
 .websites .website {
@@ -65,13 +66,55 @@
 }
 
 .website .website-card {
+  position: relative;
   border-radius: .618rem;
   overflow: hidden;
 }
 
-.website .website-bg {
+.website-card .bg-img {
+  position: relative;
   display: block;
   width: 100%;
+  transition-property: opacity;
+  opacity: 1;
+}
+
+.website-card figcaption {
+  position: absolute;
+  color: white;
+  top: 0%;
+  /* top: -100%; */
+  height: 200%;
+  width: 100%;
+  z-index: 1;
+  transition-property: opacity, top;
+  transition-duration: .5s;
+  opacity: 0;
+  /* opacity: 1; */
+}
+
+.website-card figcaption:hover {
+  opacity: 1;
+  top: -100%;
+}
+
+.website-card figcaption div {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(78, 91, 95, 0.90);
+  top: 50%;
+  height: 50%;
+  border-radius: .618rem;
+}
+
+.website-card figcaption h1 {
+  padding: .75rem;
+  font-weight: bold;
+  margin-bottom: .3333rem;
 }
 
 /* Small */
@@ -97,13 +140,13 @@
 /* Large */
 
 @media only screen and (min-width: 993px) {
-  .direction-right>.project-apps>.project-image {
+  .direction-right .project-image {
     position: relative;
-    left: 41.6666666667%;
+    left: 41.6666666667% !important;
   }
-  .direction-right>.project-apps>.project-body {
+  .direction-right .project-body {
     position: relative;
-    right: 58.3333333333%;
+    right: 58.3333333333% !important;
   }
   .valign {
     display: flex;
