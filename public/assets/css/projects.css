@@ -61,8 +61,7 @@
 
 .websites .website {
   padding: .5rem;
-  margin-left: 0 !important;
-  overflow: hidden;
+  margin-left: 0 !important;  
 }
 
 .website .website-card {
@@ -105,7 +104,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(78, 91, 95, 0.90);
+  background-color: rgba(78, 91, 95, 0.925);
   top: 50%;
   height: 50%;
   border-radius: .618rem;

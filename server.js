@@ -32,31 +32,6 @@ app.use(logger('dev'));
 // Handlebars view engine for express
 const exphbs = require('express-handlebars');
 
-/* Sass auto complier*/
-// Natively compile .scss files to css via a connect middleware
-const sassMiddleware = require('node-sass-middleware');
-const sassDir = path.join(__dirname, 'public', 'assets', 'sass');
-const cssDir = path.join(__dirname, 'public', 'assets', 'css');
-// app.use(
-//     sassMiddleware ({
-//         src: sassDir,
-//         dest: cssDir,
-//         debug: true,
-//         indentedSyntax: true,
-//         outputStyle: 'compressed',
-//         prefix: '/assets/css'
-//     })
-// );
-
-app.use(    
-    sassMiddleware({
-        src: __dirname + '/sass',
-        dest: __dirname + '/public/stylesheets',
-        prefix: '/stylesheets',
-        debug: true,
-    })
-);
-
 /******************|
 |* INITIALIZATION *| 
 |******************/
@@ -113,5 +88,3 @@ app.use('/api', routerApi);
 |* LISTEN FOR CONNECTION ON PORT *| 
 |*********************************/
 app.listen(PORT, () => { console.log(`App listening on PORT: ${PORT}`) });
-console.log('srcPath is ' + sassDir);
-console.log('destPath is ' + cssDir);
