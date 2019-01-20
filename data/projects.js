@@ -36,7 +36,7 @@ const projects = [
 		media: './assets/images/projects/phonow.png',
 		github: 'https://github.com/RealTayy/pho-now',
 		applink: 'https://phosho-phonow-production.herokuapp.com/admin',
-		customerlink: 'https://phosho-phonow-production.herokuapp.com/',
+		// customerlink: 'https://phosho-phonow-production.herokuapp.com/',
 		technologies: [node, bootstrap, handlebars, jquery, mysql, sequelize, heroku],
 	},
 	{
