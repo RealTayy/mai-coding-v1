@@ -51,6 +51,7 @@ $(() => {
 		}).then((result, err) => {
 			if (result.status !== 200) {
 				console.log(err);
+				console.log(result);
 				animateMsg('Error sending message...', 'red')
 					.promise()
 					.then(() => {
