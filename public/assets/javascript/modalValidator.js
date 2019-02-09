@@ -28,7 +28,7 @@ $(() => {
 			animateMsg('Alright everything looks good!')
 				.promise()
 				.then(() => {
-					animateMsg('Sending message now...', )
+					animateMsg('Sending message now...')
 						.promise()
 						.then(() => {
 							sendEmail(name, email, message);
@@ -48,12 +48,19 @@ $(() => {
 			type: 'POST',
 			url: '/api/email',
 			data: mailData
-		}).then((result) => {
+		}).then((result, err) => {
 			if (result.status !== 200) {
-				animateMsg('Error sending message...', red)
+				console.log(err);
+				animateMsg('Error sending message...', 'red')
 					.promise()
 					.then(() => {
 						animateMsg('Email directly at themai@maicoding.me', 'red')
+							.promise()
+							.then(() => {
+								closeModal()
+								$('#contact-model-form-submit').removeClass('disabled');
+								$('#contact-model-form-submit').text('Send Message');
+							});
 					})
 			}
 			else {
