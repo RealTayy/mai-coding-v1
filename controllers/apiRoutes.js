@@ -62,10 +62,10 @@ router.post('/email', (req, res) => {
 	transporter.sendMail(mail, (err, info) => {
 	    if (err) {
 	        console.log(err);
-	        res.send({ status: 404, text: 'FAIL' });
+	        res.send({ status: 404, error: err, info:info });
 	    }
 	    else {
-	        res.send({ status: 200, text: 'WIN' });
+	        res.send({ status: 200, error: err, info:info });
 	    }
 	    transporter.close();
 	});
