@@ -24,7 +24,7 @@ const projects = [
 		text: 'MemberDat uses React and Materialize to deliver a slick UI that feels smooth with every click. It pulls in data from a MongoDB using Mongoose as an ORM. It\s launched on a Node.js Express server that is hosted on Heroku.',
 		media: './assets/images/projects/memberDat.png',
 		github: 'https://github.com/RealTayy/member-dat',
-		applink: 'https://tm-memberdat.herokuapp.com/',
+		// applink: 'https://tm-memberdat.herokuapp.com/',
 		technologies: [node, react, materialize, reactmaterialize, mongodb, mongoose, heroku,],
 	},
 	{
@@ -35,7 +35,7 @@ const projects = [
 		text: 'Pho Now uses Bootstrap4, HandleBars, and jQuery to deliver information to visitors. The site pulls dynamic data from a MySQL DB using Sequelize as an ORM. Using the CMS\'s UI the owner can make live changes to the customer facing front-end. A Node.js server is hosted on Heroku along with a JawsDB.',
 		media: './assets/images/projects/phonow.png',
 		github: 'https://github.com/RealTayy/pho-now',
-		applink: 'https://phosho-phonow-production.herokuapp.com/admin',
+		// applink: 'https://phosho-phonow-production.herokuapp.com/admin',
 		// customerlink: 'https://phosho-phonow-production.herokuapp.com/',
 		technologies: [node, bootstrap, handlebars, jquery, mysql, sequelize, heroku],
 	},
@@ -47,7 +47,7 @@ const projects = [
 		text: 'Let\'s Eat uses Bootstrap4 as a base for styling. A combination of Knockout.js and jQuery is used for page manipulation. The app is integrated with Google Maps API for location lookup and uses Yelp API to find restaurants nearby. The app is deployed on GitHub and uses Firebase for database updates',
 		media: './assets/images/projects/letseat.png',
 		github: 'https://github.com/RealTayy/lets-eat',
-		applink: 'https://thaiscmky.github.io/letseat/',
+		// applink: 'https://thaiscmky.github.io/letseat/',
 		technologies: [node, bootstrap, knockout, jquery, firebase],
 	},
 ]

@@ -3,7 +3,7 @@
 	<div class="project-container container direction-{{direction}}">
 		<div class="project-content valign row">
 			<div class="project-image center-align col m12 l7">
-				<img class="responsive-img" src="{{media}}"/>
+				<img class="responsive-img" src="{{media}}" />
 			</div>
 
 			<div class="project-body col m12 l5">
@@ -11,13 +11,28 @@
 				<div class="project-subtitle">{{subtitle}}</div>
 				<div class="project-text-title">How it works</div>
 				<div class="project-text">{{text}}</div>
+				<div class="project-links center-align">
+					{{#if applink}}
+					<a href={{applink}} target="_blank">
+						<button class="project-link waves-effect bttn bpurple"> Launch App Site</button>
+					</a>
+					{{/if}} {{#if customerlink}}
+					<a href={{customerlink}} target="_blank">
+						<button class="project-link waves-effect bttn bpurple"> Launch Customer Site</button>
+					</a>
+					{{/if}} {{#if github}}
+					<a href={{github}} target="_blank">
+						<button class="project-link waves-effect bttn bpurple"> View on Github</button>
+					</a>
+					{{/if}}
+				</div>
 			</div>
 		</div>
 		<div class="project-technologies center-align">
 			{{#each technologies}}
-			<img class="technology-img" src="{{this}}"/> {{/each}}
-		</div>
-		<div class="project-links center-align">
+			<img class="technology-img" src="{{this}}" /> {{/each}}
+		</div>		
+		{{!-- <div class="project-links center-align">
 			{{#if applink}}
 			<a href={{applink}} target="_blank">
 				<button class="project-link waves-effect bttn bpurple"> Launch App Site</button>
@@ -31,7 +46,7 @@
 				<button class="project-link waves-effect bttn bpurple"> View on Github</button>
 			</a>
 			{{/if}}
-		</div>
-	</div>	
+		</div> --}}
+	</div>
 	<div class="section-gap"></div>
 </div>
