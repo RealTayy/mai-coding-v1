@@ -6,6 +6,6 @@
     "express-handlebars": "*",
     "morgan": "*",
     "node-sass-middleware": "*",
-    "nodemailer": "^5.1.1"
+    "nodemailer": "*"
   }
 }
