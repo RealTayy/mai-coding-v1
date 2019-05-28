@@ -67,7 +67,7 @@ router.post('/email', (req, res) => {
 	let mailData = req.body;
 	var mail = {
 		from: mailData.email,
-		to: "the.mai@maicoding.me",
+		to: "themai@maicoding.me",
 		subject: `${mailData.name} | ${mailData.email}`,
 		text: `${mailData.name} | ${mailData.email} | ${mailData.message}`,
 		html: `
