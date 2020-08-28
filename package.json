@@ -6,7 +6,9 @@
     "express-handlebars": "*",
     "googleapis": "^39.2.0",
     "morgan": "*",
-    "node-sass-middleware": "*",
     "nodemailer": "*"
+  },
+  "engines": {
+    "node": "14.7.0"
   }
 }
