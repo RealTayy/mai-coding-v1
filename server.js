@@ -4,12 +4,16 @@
 /* WEB FRAMEWORKS */
 // lightweight web framework for node server
 import express from 'express';
-// SSL Redirect from HTTP to HTTPS
-import sslRedirect from 'heroku-ssl-redirect';
+import enforce from 'express-sslify';
 
 // Initialize express under app variable
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+console.log('process.env.NODE_ENV', process.env.NODE_ENV);
+if (process.env.NODE_ENV === 'production') {
+    app.use(enforce.HTTPS());
+};
 
 /* BODY PARSERS */
 // node.js body parsing middleware avaiable under req.body

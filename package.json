@@ -4,6 +4,7 @@
     "dotenv": "*",
     "express": "*",
     "express-handlebars": "*",
+    "express-sslify": "^1.2.0",
     "googleapis": "^39.2.0",
     "heroku-ssl-redirect": "^0.1.1",
     "morgan": "*",
