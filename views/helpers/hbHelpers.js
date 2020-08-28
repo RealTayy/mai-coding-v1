@@ -10,5 +10,5 @@ const ifCond = (arg1, arg2, options) => {
     return options.inverse(this);
 }
 
-module.exports = { debug, ifCond }
+export default { debug, ifCond };
 

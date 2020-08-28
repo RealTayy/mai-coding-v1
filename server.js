@@ -1,23 +1,23 @@
 /*****************|
 |*  DEPENDECIES  *|
 |*****************/
-/* GENERAL */
-// Utilities for working with file and directory paths
-const path = require('path');
-
 /* WEB FRAMEWORKS */
 // lightweight web framework for node server
-const express = require('express');
+import express from 'express';
+// SSL Redirect from HTTP to HTTPS
+import sslRedirect from 'heroku-ssl-redirect';
+
 // Initialize express under app variable
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 /* BODY PARSERS */
 // node.js body parsing middleware avaiable under req.body
-const bodyParser = require('body-parser');
+import bodyParser from 'body-parser';
 app.use(bodyParser.json());
 app.use(bodyParser.text());
 app.use(bodyParser.urlencoded({ extended: false }));
+
 
 /* LOGGERS */
 /* morgan set to 'dev':
@@ -25,34 +25,32 @@ app.use(bodyParser.urlencoded({ extended: false }));
     YELLOW      Client Error Codes
     CYAN        Redirection Codes
     UNCOLORED   Other Codes         */
-const logger = require('morgan');
+import logger from 'morgan';
 app.use(logger('dev'));
 
 /* VIEW ENGINE */
 // Handlebars view engine for express
-const exphbs = require('express-handlebars');
+import exphbs from 'express-handlebars';
 
 /******************|
-|* INITIALIZATION *| 
+|* INITIALIZATION *|
 |******************/
 // None
 
 /*****************|
-|* SET UP MODELS *| 
+|* SET UP MODELS *|
 |*****************/
 // None
 
 /****************|
-|* SET UP VIEWS *| 
+|* SET UP VIEWS *|
 |****************/
-/* SET UP PATHS */
-const publicDir = (path.join(__dirname, 'public'));
 // Set public folder
-app.use(express.static(publicDir));
+app.use(express.static('./public'));
 
 /* SET UP ENGINE */
 // Import helper functions for handlebars
-const hbHelpers = require('./views/helpers/hbHelpers.js');
+import hbHelpers from './views/helpers/hbHelpers.js'
 
 // Sets up engine to use handlebars
 app.engine('hbs', exphbs({
@@ -71,20 +69,17 @@ app.engine('hbs', exphbs({
 app.set('view engine', 'hbs');
 
 /**********************|
-|* SET UP CONTROLLERS *| 
+|* SET UP CONTROLLERS *|
 |**********************/
-/* SET UP PATHS */
-const controllersDir = path.join(__dirname, 'controllers');
-
 /* SET UP ROUTES */
-const routerHtml = require(path.join(controllersDir, 'htmlRoutes.js'));
-const routerApi = require(path.join(controllersDir, 'apiRoutes.js'));
+import routerHtml from './controllers/htmlRoutes.js';
+import routerApi from './controllers/apiRoutes.js';
 
 /* USE ROUTES */
 app.use('/', routerHtml);
 app.use('/api', routerApi);
 
 /*********************************|
-|* LISTEN FOR CONNECTION ON PORT *| 
+|* LISTEN FOR CONNECTION ON PORT *|
 |*********************************/
 app.listen(PORT, () => { console.log(`App listening on PORT: ${PORT}`) });

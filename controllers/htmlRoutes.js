@@ -3,25 +3,25 @@
 |***************/
 /* GENERAL */
 // Utilities for working with file and directory paths
-const path = require('path');
+import path from 'path';
 
 /* WEB FRAMEWORKS */
 // lightweight web framework for node server
-const express = require('express');
+import express from 'express';
 // create instance of express router
 const router = express.Router();
 
 /* VIEW ENGINE */
 // Handlebars view engine for express
-const exphbs = require('express-handlebars');
+import exphbs from 'express-handlebars';
 
 /* OTHER */
 // Handlebar view data
-const projects = require('../data/projects.js');
-const websites = require('../data/websites.js');
-const intro = require('../data/intro.js');
+import projects from '../data/projects.js'
+import websites from '../data/websites.js'
+import intro from '../data/intro.js'
 // Utils
-const yearLetters = require('../utils/yearLetters.js');
+import yearLetters from '../utils/yearLetters.js'
 
 
 
@@ -44,4 +44,4 @@ router.get('/', (req, res) => {
 |* EXPORTS *|
 |***********/
 // Export instance of express router
-module.exports = router;
+export default router;

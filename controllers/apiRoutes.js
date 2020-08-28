@@ -1,23 +1,22 @@
 /***************|
-|* DEPENDECIES *| 
+|* DEPENDECIES *|
 |***************/
 /* GENERAL */
-// Utilities for working with file and directory paths
-const path = require('path');
 // Load enviroment variables from .env into process.env
-const envDir = path.join(__dirname, '../', '.env');
-require('dotenv').config({ path: envDir });
+import dotenv from 'dotenv'
+dotenv.config();
 
 /* WEB FRAMEWORKS */
 // lightweight web framework for node server
-const express = require('express');
+import express from 'express'
 // create instance of express router
 const router = express.Router();
 
 /* EMAIL SENDER */
 // Sends email from GMAIL with Node.js
-const nodemailer = require('nodemailer');
-const { google } = require("googleapis");
+import nodemailer from 'nodemailer'
+import googleapis from 'googleapis';
+const { google } = googleapis;
 const OAuth2 = google.auth.OAuth2;
 
 const oauth2Client = new OAuth2(
@@ -53,11 +52,11 @@ const transporter = nodemailer.createTransport({
 });
 
 /******************|
-|* INITIALIZATION *| 
+|* INITIALIZATION *|
 |******************/
 
 /*****************|
-|* SET UP ROUTER *| 
+|* SET UP ROUTER *|
 |*****************/
 /* SET ROUTES */
 router.get('/email', (req, res) => {
@@ -91,7 +90,7 @@ router.post('/email', (req, res) => {
 });
 
 /***********|
-|* EXPORTS *| 
+|* EXPORTS *|
 |***********/
 // Export instance of express router
-module.exports = router;
+export default router;

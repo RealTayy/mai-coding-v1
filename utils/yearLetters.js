@@ -9,4 +9,4 @@ function yearLetters() {
     .join('')
 }
 
-module.exports = yearLetters;
+export default yearLetters;

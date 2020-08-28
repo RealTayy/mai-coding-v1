@@ -13,4 +13,4 @@ const websites = [
 	}
 ]
 
-module.exports = websites;
+export default websites;

@@ -5,10 +5,12 @@
     "express": "*",
     "express-handlebars": "*",
     "googleapis": "^39.2.0",
+    "heroku-ssl-redirect": "^0.1.1",
     "morgan": "*",
     "nodemailer": "*"
   },
   "engines": {
     "node": "14.7.0"
-  }
+  },
+  "type": "module"
 }
