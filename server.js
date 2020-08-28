@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 3000;
 
 console.log('process.env.NODE_ENV', process.env.NODE_ENV);
 if (process.env.NODE_ENV === 'production') {
-    app.use(enforce.HTTPS());
+    app.use(enforce.HTTPS({ trustProtoHeader: true }))
 };
 
 /* BODY PARSERS */
