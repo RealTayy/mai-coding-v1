@@ -1,5 +1,5 @@
 /***************|
-|* DEPENDECIES *| 
+|* DEPENDECIES *|
 |***************/
 /* GENERAL */
 // Utilities for working with file and directory paths
@@ -13,21 +13,35 @@ const router = express.Router();
 
 /* VIEW ENGINE */
 // Handlebars view engine for express
-var exphbs = require('express-handlebars');
+const exphbs = require('express-handlebars');
+
+/* OTHER */
+// Handlebar view data
+const projects = require('../data/projects.js');
+const websites = require('../data/websites.js');
+const intro = require('../data/intro.js');
+// Utils
+const yearLetters = require('../utils/yearLetters.js');
+
+
 
 /*****************|
-|* SET UP ROUTER *| 
+|* SET UP ROUTER *|
 |*****************/
 /* SET ROUTES */
 router.get('/', (req, res) => {
-    const projects = require('../data/projects.js');
-    const websites = require('../data/websites.js');
-    const intro = require('../data/intro.js');
-    res.render('./main/index.hbs', { projects: projects, websites: websites, intro: intro });
+
+    res.render('./main/index.hbs', {
+        projects: projects,
+        websites: websites,
+        intro: intro,
+        date: { full: yearLetters() }
+    });
+
 });
 
 /***********|
-|* EXPORTS *| 
+|* EXPORTS *|
 |***********/
 // Export instance of express router
 module.exports = router;
